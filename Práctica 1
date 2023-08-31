@@ -1,0 +1,42 @@
+gcloud -h
+gcloud config --help
+
+gcloud auth list
+gcloud config list
+gcloud config list --all
+gcloud components list
+gcloud config list project
+
+gcloud config get-value compute/region
+gcloud config get-value compute/zone
+
+gcloud compute regions list
+gcloud compute zones list
+gcloud compute zones list --filter="region=REGION_XYZ"
+
+gcloud config set compute/region REGION_XYZ
+gcloud config set compute/zone ZONE_XYZ
+
+gcloud config get-value project
+
+gcloud compute project-info describe --project project_ID
+
+export PROJECT_ID=project_ID
+export ZONE=ZONE_XYZ
+
+echo PROJECT_ID
+echo ZONE_XYZ
+
+echo -e "PROJECT ID: $PROJECT_ID\nZONE: $ZONE"
+
+gcloud iam list-testable-permissions //cloudresourcemanager.googleapis.com/projects/project_ID
+gcloud projects get-iam-policy PROJECT_ID --flatten="bindings[].members" --filter="bindings.role=roles/editor"
+
+gcloud services list --enabled
+gcloud services enable bigtable.googleapis.com --project=project_ID
+gcloud services disable bigtable.googleapis.com --project=project_ID
+
+gcloud iam roles list --project=project_ID
+
+gcloud iam roles create ROLENAME --project=PROJECT_ID --file=miRol.yaml
+gcloud iam roles delete ROLENAME SuperRol --project=project_ID
