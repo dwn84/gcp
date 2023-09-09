@@ -1,0 +1,20 @@
+clear                                  (limpiar pantalla)
+cd                                     (cambiar de directorio. Directorio de trabajo del usuario: /home)
+cd ..                                  (devolverse un directorio)
+cd ../..                               (devolverse dos directorio)
+cd directorio                          (cambiar al directorio especificado)
+pwd                                    (muestra la ruta del directorio de trabajo actual)
+ls                                     (listado de archivos y carpetas)
+ls -l                                  (listado de archivos y carpetas con detalles)
+mkdir nombrenuevodirectorio            (crear un nuevo directorio)
+rm -r directorio                       (borrar un directorio)
+rm archivo                             (borrar un archivo)
+nano                                   (editor de texto plano)
+nano archivo.ext                       (abre el editor de texto y modifica el contenido del archivo)
+cp archivo.ext directorio              (copiar un archivo)
+cp archivo.ext ..
+cp archivo.ext ../..
+cp archivo.ext ../../..
+mv archivo.ext directorio              (mover un archivo)
+mv archivo.ext ..
+mv archivo.ext ../..
