@@ -11,9 +11,9 @@ rm -r directorio                       (borrar un directorio)
 rm archivo                             (borrar un archivo)
 nano                                   (editor de texto plano)
 nano archivo.ext                       (abre el editor de texto y modifica el contenido del archivo)
-cp archivo.ext directorio              (copiar un archivo)
-cp archivo.ext ..
-cp archivo.ext ../..
+cp archivo.ext directorio              (copiar un archivo a un directorio específico)
+cp archivo.ext ..                      (copiar un archivo al directorio de nivel superior)
+cp archivo.ext ../..                   (copiar un archivo a segundo directorio de nivel superior)
 cp archivo.ext ../../..
 mv archivo.ext directorio              (mover un archivo)
 mv archivo.ext ..
