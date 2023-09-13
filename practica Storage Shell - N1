@@ -1,0 +1,19 @@
+Practica recomendada: Almacenar en un bucket documentos PDF y fusionarlo en un solo documento PDF.
+
+1. Activar/Crear un proyecto e identificar su ID
+2. Crear una carpeta en un bucket del Storage con el nombre documentospruebaAPELLIDO
+3. Subir dos o tres archivos a la carpeta creada previamente.
+4. Trasladar los archivos a la máquina virtual que administra GCP
+	Activar el Google Cloud Shell
+5. Activar el proyecto en la terminal
+	gcloud config set project IDPROYECTO
+6. Copiar archivos del bucket a la terminal
+	gsutil cp "gs://documentospruebaAPELLIDO/ARCHIVO1.pdf" /home/barragan_iep/              
+	gsutil cp "gs://documentospruebaAPELLIDO/ARCHIVO1.pdf" /home/barragan_iep/              
+7. Instalar aplicativo para fusionar los PDF's
+	sudo apt-get install pdftk
+8. Realizar la fusión de los archivos
+	pdftk 'Cuenta de cobro 1.pdf' 'Cuenta de cobro 2.pdf' output resumencuentas.pdf
+9. Copiar el archivo fusionado al bucket 
+	gsutil cp resumencuentas.pdf gs://documentospruebaAPELLIDO/
+10. Comprobar en el bucket y descargar el archivo
