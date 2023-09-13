@@ -1,0 +1,24 @@
+Práctica recomendada fusion de documentos PDF:
+
+0. Seleccionar/Crear un proyecto
+1. Crear un nuevo Bucket(Storage) si no se tiene uno
+2. Crear una nueva carpeta con el nombre: archivospdfordenescompra
+3. Subir por lo menos dos archivos PDF.
+4. Activar el Cloud Shell
+5. Activar el proyecto en la terminal:
+	gcloud config set project PROJECTID
+6. Visualizar el contenido del Storage:
+	gsutil ls
+7. Visualizar el contenido de la carpeta:
+	gsutil ls gs://archivospdfordenescompra/
+8. Copiar del Storage a la carpeta del usuario administrador:
+	gsutil cp "gs://archivospdfordenescompra/Archivo1.pdf" /home/barragan_iep/ 
+	gsutil cp "gs://archivospdfordenescompra/Archivo2.pdf" /home/barragan_iep/ 
+9. Cambiar al usuario administrador de linux(root):
+	sudo su
+10. Instalar el programa pdftk
+	apt-get install pdftk
+11. Fusionar los archivos PDF:
+	pdftk Archivo1.pdf Archivo2.pdf output total.pdf
+12. Copiar el archivo fusionado al Storage:
+	gsutil cp total.pdf gs://archivospdfordenescompra/
