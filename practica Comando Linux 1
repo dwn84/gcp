@@ -18,3 +18,7 @@ cp archivo.ext ../../..
 mv archivo.ext directorio              (mover un archivo)
 mv archivo.ext ..
 mv archivo.ext ../..
+sudo su                                (cambiar al usuario administrador: root)
+apt-get install                        (instala un nuevo programa)
+sudo apt-get install                   (instala un nuevo programa con permisos de administrador)
+mc                                     (abre el gestor de archivos y carpeta)
