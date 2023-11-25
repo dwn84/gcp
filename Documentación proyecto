@@ -1,1 +1,34 @@
+Instrucciones de instalación y configuración:
+
+Disposición del entorno
+  Captura de pantalla de la máquina virtual o contenedor.
+  Captura de pantalla del servidor en línea:  systemctl status nginx
+  Captura de pantalla de la configuración de PHP:/ect/php/8.2/apache2
+  Captura de pantalla de la configuración en el servidor para activar PHP: /etc/nginx/sites-available/default
+  Captura de pantalla de la base de datos
+    mysql -u root -p    	
+    show databases;
+  Captura de pantalla del encendido y apagado de la VM
+
+Configuración de la plataforma:
+  Captura de pantalla del panel de control de Joomla
+  Captura de pantalla del articulo con el producto en venta
+  Captura de pantalla de la configuración de la pasarela de pago.(Paypal)
+
+Explicación del funcionamiento del proyecto
+
+Grabar un video corto(entre 1 y 5 minutos) recorriendo la plataforma desde GCP hasta la compra del artículo.
+ó
+Redactar un párrafo descriptivo de toda  la plataforma desde GCP hasta la compra del artículo. Una página tamaño carta con 500 palabras.
+
+Si se tiene un archivo en word/PDF y un video, guardarlos en un archivo ZIP.
+
+Plazo máximo de envío: 2 de diciembre.
+
+Enviar al correo: edwinbarragan@infocenter.com.co
+
+El título del correo: Grupo-Apellido(s)
+Ejemplos
+	N1-Perez
+	N2-Rua-Jimenez-Mendoza
 
